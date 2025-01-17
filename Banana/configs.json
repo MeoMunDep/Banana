@@ -1,0 +1,8 @@
+{
+  "delayEachAccount": [1, 1],
+  "timeToRestartAllAccounts": 300,
+  "howManyAccountsRunInOneTime": 100,
+  "doTasks": true,
+  "isSkipInvalidProxy": true,
+  "watchAds": true
+}
