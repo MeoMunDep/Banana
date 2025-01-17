@@ -63,9 +63,7 @@ This file controls the bot’s behavior. Below is an example configuration:
   "delayEachAccount": [5, 8],
   "timeToRestartAllAccounts": 300,
   "howManyAccountsRunInOneTime": 100,
-  "doTasks": true,
-  "playGames": true,
-  "referralCode": ""
+  "doTasks": true
 }
 ```
 
@@ -76,8 +74,6 @@ This file controls the bot’s behavior. Below is an example configuration:
   - `timeToRestartAllAccounts`: Time (in seconds) to restart all accounts.
   - `howManyAccountsRunInOneTime`: Number of accounts to run simultaneously.
   - `doTasks`: Enable task completion.
-  - `playGames`: Enable game-playing feature.
-  - `referralCode`: Add your referral code (optional). Do not change it if you want to support me ^^
 
 ### 2. `datas.txt` - 🗂️ User Data
 
