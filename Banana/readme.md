@@ -58,12 +58,13 @@ This file controls the bot’s behavior. Below is an example configuration:
 
 ```json
 {
-  "timeZone": "en-US",
-  "skipInvalidProxy": false,
-  "delayEachAccount": [5, 8],
+  "delayEachAccount": [1, 1],
   "timeToRestartAllAccounts": 300,
   "howManyAccountsRunInOneTime": 100,
-  "doTasks": true
+  "isSkipInvalidProxy": true,
+  "doTasks": true,
+  "watchAds": true,
+  "retryOnLoginFail": 3
 }
 ```
 
@@ -74,6 +75,8 @@ This file controls the bot’s behavior. Below is an example configuration:
   - `timeToRestartAllAccounts`: Time (in seconds) to restart all accounts.
   - `howManyAccountsRunInOneTime`: Number of accounts to run simultaneously.
   - `doTasks`: Enable task completion.
+  - `watchAds`: Enable ads watching completion.
+  - `retryOnLoginFail`: Amount of retry on login fail.
 
 ### 2. `datas.txt` - 🗂️ User Data
 

@@ -4,5 +4,6 @@
   "howManyAccountsRunInOneTime": 100,
   "doTasks": true,
   "isSkipInvalidProxy": true,
-  "watchAds": true
+  "watchAds": true,
+  "retryOnLoginFail": 3
 }
