@@ -4,6 +4,7 @@
   "howManyAccountsRunInOneTime": 100,
   "doTasks": true,
   "isSkipInvalidProxy": true,
-  "watchAds": true,
-  "retryOnLoginFail": 3
+  "watchAds": false,
+  "retryOnLoginFail": 3,
+  "referralCode": "B6J2286"
 }

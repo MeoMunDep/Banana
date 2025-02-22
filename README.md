@@ -61,10 +61,11 @@ This file controls the bot’s behavior. Below is an example configuration:
   "delayEachAccount": [1, 1],
   "timeToRestartAllAccounts": 300,
   "howManyAccountsRunInOneTime": 100,
-  "isSkipInvalidProxy": true,
   "doTasks": true,
-  "watchAds": true,
-  "retryOnLoginFail": 3
+  "isSkipInvalidProxy": true,
+  "watchAds": false,
+  "retryOnLoginFail": 3,
+  "referralCode": "B6J2286"
 }
 ```
 
@@ -77,6 +78,7 @@ This file controls the bot’s behavior. Below is an example configuration:
   - `doTasks`: Enable task completion.
   - `watchAds`: Enable ads watching completion.
   - `retryOnLoginFail`: Amount of retry on login fail.
+  - `referralCode`: Add your referral code (optional). Do not change it if you want to support me ^^
 
 ### 2. `datas.txt` - 🗂️ User Data
 
@@ -129,26 +131,57 @@ _Note: each row for each account_
 
 2. Run the bot using the following command:
 
+#### **Windows**
+
+Open Command Prompt (cmd) or PowerShell and run:
+
+```powershell
+./meomundep.exe
+```
+
+(If that doesn’t work, try `meomundep.exe` or `.\meomundep.exe`.)
+
+---
+
+#### **Linux**
+
+Since `.exe` files are designed for Windows, you need **Wine** to run them:
+
+1. **Install Wine (if not installed):**
+   - **Ubuntu/Debian:**
+     ```bash
+     sudo apt update && sudo apt install wine
+     ```
+   - **Arch Linux:**
+     ```bash
+     sudo pacman -S wine
+     ```
+   - **Fedora:**
+     ```bash
+     sudo dnf install wine
+     ```
+2. **Run the program:**
    ```bash
-   python meomundep.py
+   wine meomundep.exe
    ```
 
-   or
+---
 
+#### **macOS**
+
+macOS also requires **Wine** to run `.exe` files:
+
+1. **Install Homebrew (if not installed):**
    ```bash
-   python3 meomundep.py
+   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
    ```
-
-   or
-
+2. **Install Wine:**
    ```bash
-   py meomundep.py
+   brew install wine
    ```
-
-   or
-
+3. **Run the program:**
    ```bash
-   py3 meomundep.py
+   wine meomundep.exe
    ```
 
 ---
